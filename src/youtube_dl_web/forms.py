@@ -1,23 +1,11 @@
 from flask_wtf import FlaskForm
-from wtforms.fields import StringField, DateField, FloatField, DecimalField, IntegerField, DateTimeField, FileField, \
-    BooleanField, SubmitField
-from wtforms.validators import Email, DataRequired
+from wtforms.fields import StringField, SelectField, SubmitField
+from wtforms.validators import URL, data_required
 
 
-class SignupForm(FlaskForm):
-    name = StringField(u'Your name', validators=[DataRequired()])
-    password = StringField(u'Your favorite password', validators=[DataRequired()])
-    email = StringField(u'Your email address', validators=[Email()])
-    birthday = DateField(u'Your birthday')
+class DownloadForm(FlaskForm):
+    url = StringField(u'enter your youtube URL', validators=[URL()])
+    download_format = SelectField(label='download format', choices=[('mp3', '.mp3 (audio)'), ('mp4', '.mp4 (video)')],
+                                  validators=[data_required()])
 
-    a_float = FloatField(u'A floating point number')
-    a_decimal = DecimalField(u'Another floating point number')
-    a_integer = IntegerField(u'An integer')
-
-    now = DateTimeField(u'Current time',
-                        description='...for no particular reason')
-    sample_file = FileField(u'Your favorite file')
-    eula = BooleanField(u'I did not read the terms and conditions',
-                        validators=[DataRequired('You must agree to not agree!')])
-
-    submit = SubmitField(u'Signup')
+    submit = SubmitField(u'download')

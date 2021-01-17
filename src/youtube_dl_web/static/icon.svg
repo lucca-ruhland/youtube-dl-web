@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="132.01054mm"
+   height="91.376755mm"
+   viewBox="0 0 132.01054 91.376755"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="/home/lucca/workspace/youtube-dl-web/src/youtube_dl_web/static/icon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="19.665591"
+     inkscape:cy="49.767131"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-31.101974,-169.05425)">
+    <path
+       id="path42"
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.999999"
+       d="m 367.19336,638.94531 c -60.19049,-0.0158 -120.65273,1.49836 -155.65625,4.4043 -30.22277,2.50904 -39.99967,4.5919 -53,11.28711 -9.79196,5.04287 -23.91631,19.16592 -28.33594,28.33203 -5.15694,10.69519 -8.48274,29.21637 -11.36523,63.31641 -1.71356,20.27138 -1.71356,110.72858 0,131 2.88521,34.13208 6.22836,52.74813 11.33594,63.12304 6.21274,12.61992 22.62107,27.12817 36.6582,32.41407 15.28215,5.7547 48.07244,9.02957 109.86133,10.9707 33.28792,1.04572 176.49866,0.37583 203.8457,-0.95313 60.02918,-2.91726 80.97757,-6.02506 95,-14.09961 12.3157,-7.09175 22.91947,-18.24493 28.20117,-29.66406 7.96316,-17.21658 12.75,-64.44603 12.75,-125.79101 0,-57.41998 -3.85723,-100.49206 -11.06445,-123.57813 -5.36837,-17.19598 -19.93521,-32.49467 -37.03516,-38.89258 -10.22441,-3.82545 -34.65294,-6.81916 -73.35156,-8.99023 -34.37817,-1.92868 -81.02893,-2.86661 -127.84375,-2.87891 z"
+       transform="scale(0.26458333)" />
+    <g
+       id="g102"
+       transform="matrix(1.6880804,0,0,1.3555471,67.683768,188.19171)"
+       style="fill:#ffffff;fill-opacity:1">
+      <g
+         id="g46"
+         style="fill:#ffffff;fill-opacity:1">
+        <path
+           d="m 33.938,25.626 v 8.25 c 0,1.383 -1.119,2.5 -2.5,2.5 h -26.5 c -1.381,0 -2.5,-1.117 -2.5,-2.5 v -8.25 c 0,-1.381 1.119,-2.5 2.5,-2.5 1.381,0 2.5,1.119 2.5,2.5 v 5.75 h 21.5 v -5.75 c 0,-1.381 1.119,-2.5 2.5,-2.5 1.381,0 2.5,1.119 2.5,2.5 z M 16.42,27.768 c 0.488,0.488 1.129,0.732 1.768,0.732 0.643,0 1.279,-0.244 1.77,-0.732 l 7.5,-7.498 c 0.978,-0.975 0.978,-2.558 0,-3.535 -0.977,-0.977 -2.561,-0.977 -3.535,0 l -3.231,3.232 V 2.5 c 0,-1.381 -1.119,-2.5 -2.5,-2.5 -1.381,0 -2.5,1.119 -2.5,2.5 V 19.967 L 12.46,16.735 c -0.977,-0.977 -2.561,-0.977 -3.535,0 -0.977,0.978 -0.977,2.56 0,3.535 z"
+           id="path44"
+           style="fill:#ffffff;fill-opacity:1" />
+      </g>
+      <g
+         id="g48"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g50"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g52"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g54"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g56"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g58"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g60"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g62"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g64"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g66"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g68"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g70"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g72"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g74"
+         style="fill:#ffffff;fill-opacity:1" />
+      <g
+         id="g76"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

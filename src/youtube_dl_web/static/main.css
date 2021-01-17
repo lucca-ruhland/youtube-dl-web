@@ -1,0 +1,10 @@
+.jumbotron {
+  margin-top: 1em;  // add a little space
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
