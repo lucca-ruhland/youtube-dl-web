@@ -1,7 +1,26 @@
 import tempfile
-from pathlib import Path
+from enum import Enum
 
 import youtube_dl
+
+
+class YTDownloadFormat(Enum):
+    mp3 = {
+        'format': 'bestaudio/best',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+    }
+    m4a = {'format': '140'}
+    mp4_144p = {'format': '160+bestaudio'}
+    mp4_240p = {'format': '133+bestaudio'}
+    mp4_360p = {'format': '134+bestaudio'}
+    mp4_480p = {'format': '135+bestaudio'}
+    mp4_720p = {'format': '136+bestaudio'}
+    mp4_1080p = {'format': '137+bestaudio'}
+    best_video = {'format': 'bestvideo+bestaudio'}
 
 
 class YoutubeDLFactory:
@@ -44,16 +63,10 @@ class YoutubeDownloadHandler(DownloadHandler):
 
     @classmethod
     def default(cls):
-        mp3_settings = {
-            'format': 'bestaudio/best',
-            'postprocessors': [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': '192',
-            }],
-        }
-
-        format_options = {'mp3': mp3_settings}
+        format_options = {}
+        for dl_format in YTDownloadFormat:
+            new_format = {dl_format.name: dl_format.value}
+            format_options.update(new_format)
 
         return cls(format_options)
 

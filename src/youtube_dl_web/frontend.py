@@ -43,10 +43,7 @@ def example_form():
         download_dir = pathlib.Path(handler.temp_dir.name).joinpath('Youtube/')
         download_dir = str(download_dir)
 
-        files = map(os.path.basename, glob.glob(download_dir + f'/*.{download_format}'))
-
-        print(type(download_dir), download_dir)
-        print(type(files), files)
+        files = map(os.path.basename, glob.glob(download_dir + f'/*.*'))
 
         for file in files:
             return send_from_directory(download_dir, file, as_attachment=True)
@@ -54,3 +51,5 @@ def example_form():
         return redirect(url_for('frontend.index'))
 
     return render_template('download.html', form=form)
+
+

@@ -16,6 +16,12 @@ setuptools.setup(
     include_package_data=True,
     install_requires=[
         'flask',
+        'flask_bootstrap',
+        'flask_nav',
+        'flask_wtf',
+        'flask_debug',
+        'wtforms',
+        'youtube_dl',
     ],
     python_requires='>=3.6',
     entry_points={
