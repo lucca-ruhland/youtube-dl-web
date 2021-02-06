@@ -8,3 +8,11 @@
   margin-right: auto;
   width: 50%;
 }
+
+.multicols {
+  display: flex;
+}
+
+.col {
+  flex: 50%;
+}

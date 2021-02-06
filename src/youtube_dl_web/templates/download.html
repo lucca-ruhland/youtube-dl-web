@@ -6,9 +6,16 @@
 {% block content %}
    <div class="container">
       <div class="jumbotron">
-        <h1>Download your video below</h1>
+        <div class="multicols">
+          <div class="col">
+            <img class="center" src="{{url_for('static', filename='icon.svg')}}" alt="icon">
+          </div>
+          <div class="col">
+            <h1>Download your video below</h1>
+          </div>
+        </div>
       </div>
-       <div class="col-md-12">
+      <div class="col-md-12">
            {{wtf.quick_form(form, novalidate=True)}}
        </div>
    </div>

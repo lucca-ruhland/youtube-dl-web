@@ -1,13 +1,13 @@
+import pathlib
+
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_debug import Debug
+from flask_wtf import CSRFProtect
 
-import pathlib
-
+from youtube_dl_web.default_config import Config
 from youtube_dl_web.frontend import frontend
 from youtube_dl_web.nav import nav
-import youtube_dl_web.default_config as default_config
-from youtube_dl_web.ydl_helper import YoutubeDownloadHandler
 
 
 def create_app(test_config=None) -> Flask:
@@ -18,7 +18,7 @@ def create_app(test_config=None) -> Flask:
         if user_config.exists():
             app.config.from_pyfile(user_config, silent=True)
         else:
-            app.config.from_object(default_config)
+            app.config.from_object(Config)
     else:
         app.config.from_object(test_config)
 
@@ -31,6 +31,7 @@ def create_app(test_config=None) -> Flask:
 
     nav.init_app(app)
 
-    app.config['HANDLER'] = YoutubeDownloadHandler.default()
+    crsf = CSRFProtect()
+    crsf.init_app(app)
 
     return app

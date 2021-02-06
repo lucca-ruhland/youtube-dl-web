@@ -1,10 +1,18 @@
 from youtube_dl_web import create_app
+from youtube_dl_web.default_config import Production, Debug
+from youtube_dl_web.parser import create_parser, get_args
 
 
 def main():
-    app = create_app()
-    app.run(host='127.0.0.1', port=5000)
+    parser = create_parser()
+    args = get_args(parser)
 
+    if args.environment == 'production':
+        config = Production()
+    elif args.environment == 'debug':
+        config = Debug()
+    else:
+        config = None
 
-if __name__ == '__main__':
-    main()
+    app = create_app(config)
+    app.run(host=args.host, port=args.port)

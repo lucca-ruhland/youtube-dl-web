@@ -11,8 +11,7 @@
 {%- endblock %}
 
 {% block styles -%}
-    {{super()}}  {# do not forget to call super or Bootstrap's own stylesheets
-                    will disappear! #}
+    {{super()}}
     <link rel="stylesheet" type="text/css"
           href="{{url_for('static', filename='main.css')}}">
 {% endblock %}

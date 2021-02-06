@@ -14,6 +14,7 @@ setuptools.setup(
     package_dir={'': 'src'},
     packages=setuptools.find_packages('src'),
     include_package_data=True,
+    package_data={'': ['youtube_dl_web/static/', 'youtube_dl_web/templates/']},
     install_requires=[
         'flask',
         'flask_bootstrap',
@@ -22,6 +23,7 @@ setuptools.setup(
         'flask_debug',
         'wtforms',
         'youtube_dl',
+        'uwsgi',
     ],
     python_requires='>=3.6',
     entry_points={

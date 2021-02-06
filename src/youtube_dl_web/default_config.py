@@ -1,8 +1,22 @@
-# The default_config module automatically gets imported by Appconfig, if it
-# exists. See https://pypi.python.org/pypi/flask-appconfig for details.
+from secrets import token_urlsafe
 
-# Note: Don't *ever* do this in a real app. A secret key should not have a
-#       default, rather the app should fail if it is missing. For the sample
-#       application, one is provided for convenience.
-SECRET_KEY = 'befaba82d8f35027dde341031afc926b96d9d437a13fa383f2950cd3f53b28d2'
-DEBUG = True
+
+class Config:
+    SECRET_KEY = token_urlsafe(32)
+    SESSION_COOKIE_SECURE = True
+    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SAMESITE = 'Lax'
+
+
+class Production(Config):
+    WTF_CSRF_SECRET_KEY = token_urlsafe(32)
+    WTF_CSRF_ENABLED = True
+    DEBUG = False
+    FLASK_DEBUG_DISABLE_STRICT = True
+    BOOTSTRAP_CDN_FORCE_SSL = True
+
+
+class Debug(Config):
+    WTF_CSRF_ENABLED = False
+    DEBUG = True
+    TESTING = True
