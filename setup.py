@@ -23,7 +23,7 @@ setuptools.setup(
         'flask_debug',
         'wtforms',
         'youtube_dl',
-        'uwsgi',
+        'gunicorn',
     ],
     python_requires='>=3.6',
     entry_points={
