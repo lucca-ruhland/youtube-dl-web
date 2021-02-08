@@ -20,3 +20,7 @@ class Debug(Config):
     WTF_CSRF_ENABLED = False
     DEBUG = True
     TESTING = True
+
+
+class Docker(Debug):
+    EXPLAIN_TEMPLATE_LOADING = True
