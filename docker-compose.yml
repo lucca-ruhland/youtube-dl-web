@@ -8,12 +8,3 @@ services:
     ports:
       - "7000:7000"
     command: /opt/venv/bin/gunicorn -w 1 -b 0.0.0.0:7000 youtube_dl_web.wsgi:app
-
-  nginx:
-    container_name: nginx
-    restart: always
-    build: ./nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - flask_app
