@@ -7,7 +7,6 @@ setuptools.setup(
     name='youtube-dl-web',
     version='0.0.1',
     author='Lucca Ruhland',
-    author_email='lucca.ruhland@gmx.net',
     description='web frontend for youtube-dl',
     long_description=long_description,
     long_description_content_type='text/markdown',
